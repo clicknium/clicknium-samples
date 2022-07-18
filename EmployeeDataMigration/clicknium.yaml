@@ -1,0 +1,13 @@
+startUp: app
+ignoreFiles: .gitignore
+log:
+  folder: null
+  type: File
+type: script
+requirements:
+  python: 3.9.7
+  pip: null
+  packages:
+    - package: clicknium
+      version: null
+  locators: []
