@@ -1,17 +1,18 @@
 import os
 import requests
-from clicknium import clicknium as cc, locator, ui
+from clicknium import clicknium as cc, locator
 import pandas as pd
 
 def main():
     tab = cc.edge.open("https://developer.automationanywhere.com/challenges/automationanywherelabs-supplychainmanagement.html")
     url = tab.find_element(locator.supplychainmanagement.developer.a_downloadagentterritoryspreadsheet).get_property("href")
+
     excelFile = requests.get(url)
     temp_file = os.path.join(os.getcwd(), 'test.xlsx')
     open(temp_file, 'wb').write(excelFile.content)
     data = pd.read_excel(temp_file,header=1)
     
-    proc_tab = cc.edge.open("https://developer.automationanywhere.com/challenges/AutomationAnywhereLabs-POTrackingLogin.html")
+    proc_tab = tab.browser.new_tab("https://developer.automationanywhere.com/challenges/AutomationAnywhereLabs-POTrackingLogin.html",timeout=60)
     proc_tab.find_element(locator.supplychainmanagement.developer.email_inputemail).set_text("admin@procurementanywhere.com")
     proc_tab.find_element(locator.supplychainmanagement.developer.password_inputpassword).set_text("paypacksh!p")
     proc_tab.find_element(locator.supplychainmanagement.developer.button_signin).click()

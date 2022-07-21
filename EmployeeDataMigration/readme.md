@@ -1,6 +1,7 @@
-# Sample to demostrate clicknium combined automation for desktop and web application
+# Clicknium automation sample solution - Data migration
 
-This is a sample to solve data migration problem through [clicknium](https://www.clicknium.com/) desktop&web automation.
+Many enterprise needs data migration solution, for example, if IT system is upgraded, need migrate data from legacy system to new system.
+This is a sample for employee data migration solution through [clicknium](https://www.clicknium.com/) desktop&web automation.
 The detail of problem is: migrate employee data from a legacy thick client application into new HR system.
 The manual steps are as the following:
 - query data from legacy client app based on employee id.
@@ -91,10 +92,14 @@ From above code, you can see:
 - Clicknium supply unified API for both desktop and web automation, so you can use the same way to write automation code for browser, windows application.
 
 # Locator
-[Locator](https://www.clickcorp.com/documents#automation/locator) is the identifier of UI element, through [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) can record/edit the locator.
+[Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of UI element, through [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) can record/edit the locator.
 
 For this sample, you can open the locator in Visual Studio Code, for example:
 ![locator](img/locator.png)
+
+# Compare with Selenium & Playwright
+- Selenium need download the webdriver which version should exactly match the browser, in this example, my Edge browser version is `103.0.1264.62`, so I need download the same version msedge web driver first.
+- Selenium and playwright can only do web automation, so for this employee data migration solution, you need use another library such as pywinauto to do operation on legacy client app.
 
 # More samples
 You can find more automatin sample/solution from [clicknium github samples](https://github.com/clicknium/clicknium-samples)

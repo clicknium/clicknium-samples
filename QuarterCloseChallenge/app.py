@@ -1,6 +1,3 @@
-import os
-import sys
-from time import sleep
 from clicknium import clicknium as cc, locator
 from clicknium.core.models.web.browser import BrowserTab
 
@@ -25,9 +22,6 @@ def update_transaction_status(tab: BrowserTab, transaction):
         elems[i].select_item(transaction[i]["Status"])
 
     tab.find_element(locator.quaterclose.developer.button_submitbutton).click()
-    #tab.find_element(locator.QuaterClose.developer.div).highlight()
-    imagefile = os.path.join(os.path.dirname(__file__), 'result', 'result.png')
-    tab.find_element(locator.quaterclose.developer.div).save_to_image(imagefile)
 
 def validate_transaction(transaction):
     bank_tab = cc.edge.open("https://developer.automationanywhere.com/challenges/automationanywherelabs-arcadiabanklogin.html", is_wait_complete=True, timeout=60)
@@ -35,13 +29,9 @@ def validate_transaction(transaction):
     bank_tab.find_element(locator.quaterclose.developer.password_inputpassword).set_text("arcadiabank!")
     bank_tab.find_element(locator.quaterclose.developer.a_login).click()
     for item in transaction:
-        print(item["Account"])
         bank_tab.find_element(locator.quaterclose.developer.a_action, {"account":item["Account"]}).click()
-        #sleep(1)
-        #bank_tab.find_element(locator.chrome.developer.table1).highlight()
         bank_tab.wait_appear(locator.quaterclose.developer.table1)
         bank_tab.find_element(locator.quaterclose.developer.text).set_text(item["Amount"])
-        #bank_tab.find_element(locator.chrome.developer.text).set_text(item["Amount"], input_method='keyboardsimulatewithclick')
         if bank_tab.is_existing(locator.quaterclose.developer.td_amount, {"amount":item["Amount"]}):
             item["Status"] = "Verified"
     bank_tab.close()

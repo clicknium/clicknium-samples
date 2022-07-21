@@ -1,4 +1,4 @@
-# Sample to demostrate clicknium web automation solution - customer onboarding
+# Clicknium automation sample solution - customer onboarding
 
 This is a sample of customer onboarding solution through [clicknium](https://www.clicknium.com/) web automation.
 
@@ -76,7 +76,7 @@ From above code, you can see:
 - Easy to check radio button/checkbox: `tab.find_element(<locator>).set_checkbox()`
 
 # Locator
-[Locator](https://www.clickcorp.com/documents#automation/locator) is the identifier of UI element, through [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) can record/edit the locator.
+[Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of UI element, through [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) can record/edit the locator.
 For this sample, you can open the locator in Visual Studio Code, for example:
 ![locator](img/locator.png)
 

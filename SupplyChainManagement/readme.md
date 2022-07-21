@@ -1,6 +1,6 @@
-# Sample to demostrate clicknium web automation interactive with Excel data
+# Clicknium automation sample solution - Supply chain management
 
-This is a sample to solve Purchase Orders data management through [clicknium](https://www.clickcorp.com) web automation.
+This is a sample of supply chain solution through [clicknium](https://www.clicknium.com/) web automation.
 The detail of problem is: based on PO number, find and capture data from another `Purchase Order Tracking` web app, and look up state for agent from one excel, finally fill the data to PO management web portal.
 The manual steps are as the following:
 - download excel from PO management portal.
@@ -10,14 +10,29 @@ The manual steps are as the following:
 - fill the PO data into PO management portal.
 
 
-# run this sample
-- follow [clicknium getting started](https://www.clickcorp.com/documents?source=github) to set up develop environment.
-- clone this sample repo.
+# Run this sample
+- follow [clicknium getting started](https://www.clicknium.com/documents) to set up develop environment.
+- clone [sample repo](https://github.com/clicknium/clicknium-samples).
+```
+git clone https://github.com/clicknium/clicknium-samples.git
+```
+- open the folder 'SupplyChainManagement' in Visual Studio code
+- through `pip` install the dependenct packages
+  
+`requests` is used to download the CSV file and `pandas` is used to read CSV file.
+
+```
+pip install requests
+pip install pandas
+```
 - open `app.py` in visual studio code.
 - press `F5` to debug the sample or press `CTRL+F5` to run sample.
+You will see the result:
 
-# what the sample do
-- open PO management portal, and capture the excel download url.
+![result](img/result.png)
+
+# What the sample do
+- open PO management portal, and capture the url of the excel to be downloaded.
 - through `requests` module to download excel file.
 - through `pandas` module to load data from excel file. 
 
@@ -32,17 +47,17 @@ data = pd.read_excel(temp_file,header=1)
 
 - open `Purchas Order Tracking` web app and login
   
-```
-proc_tab = cc.edge.open("https://developer.automationanywhere.com/challenges/AutomationAnywhereLabs-POTrackingLogin.html")
-proc_tab.find_element(locator.supplychainmanagement.developer.email_inputemail).set_text("admin@procurementanywhere.com")
-proc_tab.find_element(locator.supplychainmanagement.developer.password_inputpassword).set_text("paypacksh!p")
+```python
+proc_tab = tab.browser.new_tab("https://developer.automationanywhere.com/challenges/AutomationAnywhereLabs-POTrackingLogin.html")
+proc_tab.find_element(locator.supplychainmanagement.developer.email_inputemail).set_text('username')
+proc_tab.find_element(locator.supplychainmanagement.developer.password_inputpassword).set_text('password')
 proc_tab.find_element(locator.supplychainmanagement.developer.button_signin).click()
 ```
-after browser is opened, will return the edge tab/page.
+after browser opened, will return the edge tab/page.
 
 - through clicknium web automaton, find all elements for each PO item: PO number, Ship date, Order total and Assigned agent.
 
-```
+```python
 po_elements = tab.find_elements(locator.supplychainmanagement.developer.text_ponumber)
 date_elements = tab.find_elements(locator.supplychainmanagement.developer.text_shipdate)
 total_elements = tab.find_elements(locator.supplychainmanagement.developer.text_ordertotal)
@@ -50,15 +65,15 @@ agent_elements = tab.find_elements(locator.supplychainmanagement.developer.selec
 count = len(po_elements)
 ```
 
-here we leverage clicknium `find_elements` api, it can find all similiar elements. For example, for PO number element's locator:
+Here we leverage clicknium `find_elements` api, it can find all similar elements. For example, for PO number element's locator:
 
-![locator1](locator1.png)
+![locator1](img/locator1.png)
 
 we set the value of id to `PONumber*`, it will match all elements with id start with `PONumber`.
 
 - iterate each PO number elements: capture PO number, query data from `Purchas Order Tracking` web app, fill the data in web portal and submit finally
 
-```
+```python
 for i in range(count):
 po = po_elements[i].get_text()
 proc_tab.find_element(locator.supplychainmanagement.developer.search).set_text(po)
@@ -76,7 +91,15 @@ for idx,item in data.iterrows():
 tab.find_element(locator.supplychainmanagement.developer.button_submitbutton).click()
 ```
 
+To get text of `state`, `ship_date` and `total`, we use [parametric locator](https://www.clicknium.com/documents/automation/parametric_locator), during running, specified the parameter value, so we can use one locator to locate several elements.
+
+![parametric locator](img/parametric_locator.png)
+
+
 # Locator
-[Locator](https://www.clickcorp.com/documents#automation/locator) is the identifier of UI element, through [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) can record/edit the locator.
+[Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of UI element, through [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) can record/edit the locator.
+
+# More samples
+You can find more automatin sample/solution from [clicknium github samples](https://github.com/clicknium/clicknium-samples)
 
 
