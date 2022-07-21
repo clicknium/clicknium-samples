@@ -9,7 +9,7 @@ Here we demo one custoemr onboarding automation solution:
 - iterate the records in CVS file, fill into CRM form and register each customer.
 
 # Run this sample
-- follow [clicknium getting started](https://www.clicknium.com/) to set up develop environment.
+- follow [clicknium getting started](https://www.clicknium.com/documents) to set up develop environment.
 - clone [sample repo](https://github.com/clicknium/clicknium-samples).
 ```
 git clone https://github.com/clicknium/clicknium-samples.git
@@ -107,8 +107,3 @@ In this sample, need fill 7 records, each record need submit 10 fields. From the
 
 # More samples
 You can find more automatin sample/solution from [clicknium github samples](https://github.com/clicknium/clicknium-samples)
-
-
-
-
-

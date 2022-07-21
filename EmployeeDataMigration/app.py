@@ -29,8 +29,8 @@ def main():
     for _ in range(10):
         item = {}
         employee_id = tab.find_element(locator.employeedatamigration.developer.text_employeeid).get_text()
-        cc.ui(locator.employeedatamigration.employee.edit_txtempid).set_text(employee_id)
-        cc.ui(locator.employeedatamigration.employee.button_btnsearch).click()
+        cc.ui(locator.employeedatamigration.employee.edit_txtempid).set_text(employee_id, by='set-text')
+        cc.ui(locator.employeedatamigration.employee.button_btnsearch).click(by='control-invocation')
         item["first_name"] = cc.ui(locator.employeedatamigration.employee.edit_txtfirstname).get_text()
         item["last_name"] = cc.ui(locator.employeedatamigration.employee.edit_txtlastname).get_text()
         item["email_id"] = cc.ui(locator.employeedatamigration.employee.edit_txtemailid).get_text()
@@ -51,7 +51,7 @@ def main():
         submit_item(tab, item)
 
     process.kill()
-    tab.browser.close()
+    #tab.browser.close()
 
 if __name__ == "__main__":
     main()
