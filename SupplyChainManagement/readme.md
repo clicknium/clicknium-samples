@@ -1,6 +1,6 @@
 # Sample to demostrate clicknium web automation interactive with Excel data
 
-This is a sample to solve Purchase Orders data management through [clicknium]((https://www.clickcorp.com/?source=github)) web automation.
+This is a sample to solve Purchase Orders data management through [clicknium](https://www.clickcorp.com) web automation.
 The detail of problem is: based on PO number, find and capture data from another `Purchase Order Tracking` web app, and look up state for agent from one excel, finally fill the data to PO management web portal.
 The manual steps are as the following:
 - download excel from PO management portal.
