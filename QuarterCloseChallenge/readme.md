@@ -97,6 +97,18 @@ def update_transaction_status(tab: BrowserTab, transaction):
 # Locator
 [Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of UI element, through [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) can record/edit the locator.
 
+# Compare with Playwright
+- To get silimar elements, I need write xpath by myself.
+```python
+elems1 = page.query_selector_all("//*[contains(@id,'PaymentAccount')]")
+elems2 = page.query_selector_all("//*[contains(@id,'PaymentAmount')]")
+```
+- To search the transaction item, besides filling the text, I also need press the Enter.
+```python
+bank_page.locator("[placeholder=\"Search\\.\\.\\.\"]").fill(item["Amount"])
+bank_page.press("[placeholder=\"Search\\.\\.\\.\"]",'Enter')
+```
+
 # More samples
 You can find more automatin sample/solution from [clicknium github samples](https://github.com/clicknium/clicknium-samples)
 
