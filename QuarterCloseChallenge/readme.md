@@ -1,19 +1,19 @@
-# Clicknium automation sample solution - Finance Quarter Close
+# Clicknium Automation Sample Solution - Finance Quarter Close
 
-For many enterprises, at the end of each fiscal quarter, the finance team spends much time to make sure all of the financial obligations that were met.
-This is a sample of financial qutarter close solution through [clicknium](https://www.clicknium.com/) automation.
+For many enterprises, at the end of each fiscal quarter, the finance team spends much time making all of the financial obligations fulfilled.
+This is a sample of financial quarter close solution with [clicknium](https://www.clicknium.com/) automation.
 It can review transactions automatically.
-The detail of problem is: go through transactions in local financial system, and find the matching transaction in Bank system. If a match is found, need change the `Transaction Status` to `Verified` in local financial system.
+Here is the details: go through transactions in local financial system to find the matching transaction in the Bank system. If the match is found, change the `Transaction Status` to `Verified` in local financial system.
 
-The manual steps are as the following:
+The manual steps are as follows:
 - login to local financial system.
-- Query the transactions of this quarter.
-- login bank system.
+- Query the transactions in this quarter.
+- login to the bank system.
 - For each transaction:
   - based on `Payment Account`, navigate to corresponding page.
   - search 'Payment Amount'.
-  - If find the matched one, go back to local financial system, set the `Transaction Status` to Verified.
-- After all transactions reviewed, click `Submit` button on local financial system.
+  - If the matched one is found, go back to local financial system, set the `Transaction Status` to Verified.
+- After all transactions are reviewed, click `Submit` button in local financial system.
 
 # Run this sample
 - follow [clicknium getting started](https://www.clicknium.com/documents) to set up develop environment.
@@ -21,15 +21,15 @@ The manual steps are as the following:
 ```
 git clone https://github.com/clicknium/clicknium-samples.git
 ```
-- open the folder 'QuarterCloseChallenge' in Visual Studio code
-- open `app.py` in visual studio code.
+- open the folder 'QuarterCloseChallenge' in Visual Studio Code
+- open `app.py` in Visual Studio Code.
 - press `F5` to debug the sample or press `CTRL+F5` to run sample.
-You will see the result:
+You will see the result as below:
 
 ![result](img/result.png)
 
-# What the sample do
-- open local financial system, get the transaction count and scrape `Amount` and `Account` information for each transaction.
+# The Purpose of The Sample
+- open local financial system to get the transaction count and scrape `Amount` and `Account` information for each transaction.
 
 ```python
 def get_transaction_count():
@@ -47,25 +47,25 @@ def get_transaction_count():
     return tab,transaction
 ```
 
-Here we leverage clicknium `find_elements` api, it can find all similar elements. For example, for PO number element's locator:
+Here we leverage Clicknium `find_elements` api to find all similar elements. For example, for element's locator of PO number:
 
 ![locator1](img/locator1.png)
 
-To record similar elements, you can click `Similar elements` on Clicknium Recorder:
+To record similar elements, you can click `Similar elements` in Clicknium Recorder:
 ![recorder1](img/recorder1.png)
 
-The wizard will be shown:
+The wizard will be shown as below:
 ![recorder2](img/recorder2.png)
 
 You can record (`Ctrl`+click) two or more elements, for example:
 ![recorder3](img/recorder3.png)
 
-It will show how many elements matched:
+It will show the counts of matched elements:
 ![recorder4](img/recorder4.png)
 
 - open bank system and login
-- iterate the transactions, based on each transaction's account, go to the corresponding account page
-- search the transaction's amount, if find matched one, then mark the tranaction state to Verified.
+- iterate the transactions and go to the corresponding account page based on each transaction's account
+- search the transaction's amount, and if the matched one is found, mark the transaction state as Verified.
 
 ```python
 def validate_transaction(transaction):
@@ -82,7 +82,7 @@ def validate_transaction(transaction):
     bank_tab.close()
 ```
 
-- go back to local financial system, batch update transactions state.
+- go back to local financial system and  batch update transactions state.
 
 ```python
 def update_transaction_status(tab: BrowserTab, transaction):
@@ -95,21 +95,21 @@ def update_transaction_status(tab: BrowserTab, transaction):
 ```
 
 # Locator
-[Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of UI element, through [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) can record/edit the locator.
+The [Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of UI element, which can be recorded and edited with [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium).
 
 # Compare with Playwright
-- To get silimar elements, I need write xpath by myself.
+- You need to write xpath to get similar elements.
 ```python
 elems1 = page.query_selector_all("//*[contains(@id,'PaymentAccount')]")
 elems2 = page.query_selector_all("//*[contains(@id,'PaymentAmount')]")
 ```
-- To search the transaction item, besides filling the text, I also need press the Enter.
+- You need to fill the text to search the transaction item by pressing Enter as well.
 ```python
 bank_page.locator("[placeholder=\"Search\\.\\.\\.\"]").fill(item["Amount"])
 bank_page.press("[placeholder=\"Search\\.\\.\\.\"]",'Enter')
 ```
 
 # More samples
-You can find more automatin sample/solution from [clicknium github samples](https://github.com/clicknium/clicknium-samples)
+You can refer to more automation samples and solutions in [clicknium github samples](https://github.com/clicknium/clicknium-samples)
 
 
