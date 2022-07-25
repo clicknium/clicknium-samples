@@ -1,21 +1,21 @@
-# Clicknium automation sample solution - customer onboarding
+# Clicknium Automation Sample Solution - Customer Onboarding
 
-This is a sample of customer onboarding solution through [clicknium](https://www.clicknium.com/) web automation.
+This is a sample of customer onboarding solution with [clicknium](https://www.clicknium.com/) web automation.
 
-For one enterprise, customer onboarding has a significant impact on whether a customer keeps using your product or not, you may define the customer onboarding process in your comany internally, for example, need add new customer information into CRM(customer relationship management) system. If you can automatically to do customer onboarding process, it should improve the efficiency significantly.
-Here we demo one custoemr onboarding automation solution: 
-- load the missing customer's information from CSV file.
+For one enterprise, customer onboarding has a significant impact on a customer willingness of using your product. You may define the customer onboarding process in your company internally,for example,  new customer information adds into CRM(customer relationship management) system. If you can automatically process customer onboarding, the efficiency will be significantly improved. 
+Here we demonstrate one customer onboarding automation solution.
+- load the missing customer information from CSV file.
 - open CRM system.
-- iterate the records in CVS file, fill into CRM form and register each customer.
+- iterate the records in CVS file to register customer information into CRM.
 
 # Run this sample
-- follow [clicknium getting started](https://www.clicknium.com/documents) to set up develop environment.
+- follow [Clicknium getting started](https://www.clicknium.com/documents) to set up develop environment.
 - clone [sample repo](https://github.com/clicknium/clicknium-samples).
 ```
 git clone https://github.com/clicknium/clicknium-samples.git
 ```
 - open the folder 'CustomerOnboarding' in Visual Studio code
-- through `pip` install the dependenct packages
+- through `pip` install the dependent packages
   
 `requests` is used to download the CSV file and `pandas` is used to read CSV file.
 
@@ -27,13 +27,13 @@ pip install pandas
 - open `app.py` in Visual Studio Code.
 - press `F5` to debug the sample or press `CTRL+F5` to run sample.
 
-You will see the result:
+You will see the result as below:
 
 ![result](img/result.jpg)
 
-# What the sample do
+# The Purpose of the Sample
 - open the testing CRM web portal.
-- get the url of CSV to be download.
+- get the url of CSV.
 - download the CSV file.
 
 ```python
@@ -45,7 +45,7 @@ open(temp_file, 'wb').write(excelFile.content)
 data = pd.read_csv(temp_file)
 ```
 
-- iterate the records and fill the data into CRM system and register the customer.
+- iterate the records in CVS file to register customer information into CRM.
 
 ```python
 for idx, item in data.iterrows():
@@ -70,33 +70,33 @@ tab.find_element(locator.customeronboarding.developer.checkbox_nda).set_checkbox
 tab.find_element(locator.customeronboarding.developer.button_submit_button).click()
 ```
 
-From above code, you can see:
-- Locator is separate from code, so locator store can be managed independently, if the CRM system is upgrade, locator is changed, just need update the locator store.
-- Easy to select option from dropdown list: `tab.find_element(<locator>).select_item(<option>)`
+In the code above, you can see:
+- The locator is separated from code, so the locator store can be managed independently. If the CRM system is upgraded, the locator will be changed as well and the locator store is updated accordingly.
+- Easy to select options from dropdown list: `tab.find_element(<locator>).select_item(<option>)`
 - Easy to check radio button/checkbox: `tab.find_element(<locator>).set_checkbox()`
 
 # Locator
-[Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of UI element, through [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) can record/edit the locator.
-For this sample, you can open the locator in Visual Studio Code, for example:
-![locator](img/locator.png)
+The [Locator](https://www.clickcorp.com/documents#automation/locator) is the identifier of a UI element, which can be recorded and edited in [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium). 
 
-Clicknium will automatically select the attribute to identify web element, and show all attributes of this element, if you want to choose other attributes in some case, it is easily to do that is Visual Studio Code.
+In this sample, you can open the locator in Visual Studio Code, for example:
+![locator](img/locator.png)	
+Clicknium will automatically select the attribute to identify web element, and show all attributes of this element. It is easy to choose other attributes in Visual Studio Code as well as you want.
 
-# Compare with Selenium
-- Selenium need download the webdriver which version should exactly match the browser, in this example, my Edge browser version is `103.0.1264.62`, so I need download the same version msedge web driver first.
-- Selenium does not support check operation for radion button, need use click instead.
+# Comparison with Selenium
+- You have to download the web driver in Selenium with the version matching exactly the browser. In this example, the Edge browser version is `103.0.1264.62`, so there is a need to download the same version, MS Edge web driver first.
+- Selenium does not support checking operations with radio button, by click instead.
 ```
 driver.find_element('id', 'activeDiscountYes').click()
 ```
 
-- To select option from dropdown list, need import additional class to wrapper.
+- Need to import additional class to wrapper to select options from the dropdown list.
 ```python
 from selenium.webdriver.support.select import Select
 Select(driver.find_element('id', 'state')).select_by_value(item[5])
 ```
 
-- Compare the running time
-In this sample, need fill 7 records, each record need submit 10 fields. From the log, we can see clicknium is more faster than selenium.
+- Different running time
+In this sample, 7 records need to be filled, with each record submit 10 fields. From the log, we can see Clicknium is running faster than selenium.
 ```
 [clicknium] Start to fill data:2022-07-21 16:10:15.938903
 [clicknium] End to fill data:2022-07-21 16:10:18.460162
@@ -106,4 +106,9 @@ In this sample, need fill 7 records, each record need submit 10 fields. From the
 ```
 
 # More samples
-You can find more automatin sample/solution from [clicknium github samples](https://github.com/clicknium/clicknium-samples)
+You can refer to more automation samples/solutions in [clicknium github samples](https://github.com/clicknium/clicknium-samples)
+
+
+
+
+
