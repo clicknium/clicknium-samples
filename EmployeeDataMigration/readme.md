@@ -102,4 +102,5 @@ In this sample, you can open the locator in Visual Studio Code, for example:
 - Selenium and playwright can only support web automation. So when it comes to employee data migration solution, you can operate on the legacy client app by using another library such as pywinauto.
 
 # More samples
-You can refer to more automation samples or solutions in [clicknium github samples](https://github.com/clicknium/clicknium-samples)
+You can refer to more automation samples or solutions in [clicknium github samples](https://github.com/clicknium/clicknium-samples).
+Send [email](mailto:support@clicknium.com) to us or [Join Slack](https://join.slack.com/t/clicknium/shared_invite/zt-1cfxsstw7-s0CeJdhyg5wQ1h7_KKc6QQ).

@@ -76,7 +76,7 @@ In the code above, you can see:
 - Easy to check radio button/checkbox: `tab.find_element(<locator>).set_checkbox()`
 
 # Locator
-The [Locator](https://www.clickcorp.com/documents#automation/locator) is the identifier of a UI element, which can be recorded and edited in [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium). 
+The [Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of a UI element, which can be recorded and edited in [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium). 
 
 In this sample, you can open the locator in Visual Studio Code, for example:
 ![locator](img/locator.png)	
@@ -106,9 +106,9 @@ In this sample, 7 records need to be filled, with each record submit 10 fields. 
 ```
 
 # More samples
-You can refer to more automation samples/solutions in [clicknium github samples](https://github.com/clicknium/clicknium-samples)
+You can refer to more automation samples/solutions in [clicknium github samples](https://github.com/clicknium/clicknium-samples).
 
-
+Send [email](mailto:support@clicknium.com) to us or [Join Slack](https://join.slack.com/t/clicknium/shared_invite/zt-1cfxsstw7-s0CeJdhyg5wQ1h7_KKc6QQ).
 
 
 

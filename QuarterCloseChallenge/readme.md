@@ -110,6 +110,7 @@ bank_page.press("[placeholder=\"Search\\.\\.\\.\"]",'Enter')
 ```
 
 # More samples
-You can refer to more automation samples and solutions in [clicknium github samples](https://github.com/clicknium/clicknium-samples)
+You can refer to more automation samples and solutions in [clicknium github samples](https://github.com/clicknium/clicknium-samples).
+Send [email](mailto:support@clicknium.com) to us or [Join Slack](https://join.slack.com/t/clicknium/shared_invite/zt-1cfxsstw7-s0CeJdhyg5wQ1h7_KKc6QQ).
 
 

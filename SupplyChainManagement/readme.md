@@ -100,6 +100,7 @@ To get text of `state`, `ship_date` and `total`, we can run [parametric locator]
 The [Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of UI element,which can be recorded and edited with [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium).
 
 # More samples
-You can refer to more automation samples and solutions in [clicknium github samples](https://github.com/clicknium/clicknium-samples)
+You can refer to more automation samples and solutions in [clicknium github samples](https://github.com/clicknium/clicknium-samples).
+Send [email](mailto:support@clicknium.com) to us or [Join Slack](https://join.slack.com/t/clicknium/shared_invite/zt-1cfxsstw7-s0CeJdhyg5wQ1h7_KKc6QQ).
 
 
