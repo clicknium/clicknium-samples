@@ -22,9 +22,9 @@
 
     sources = []
     for img in imgs:
-    source = img.get_property("src")
-    if source:
-            sources.append(source)
+        source = img.get_property("src")
+        if source:
+                sources.append(source)
 
     for source in sources:
         webs = requests.get(websiteUrl + source)
