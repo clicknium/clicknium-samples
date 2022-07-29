@@ -95,7 +95,7 @@ def update_transaction_status(tab: BrowserTab, transaction):
 ```
 
 # Locator
-The [Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of UI element, which can be recorded and edited with [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium).
+The [Locator](https://www.clicknium.com/documents/concepts/locator) is the identifier of UI element, which can be recorded and edited with [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium).
 
 # Compare with Playwright
 - You need to write xpath to get similar elements.

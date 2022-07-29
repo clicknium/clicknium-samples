@@ -91,13 +91,13 @@ for idx,item in data.iterrows():
 tab.find_element(locator.supplychainmanagement.developer.button_submitbutton).click()
 ```
 
-To get text of `state`, `ship_date` and `total`, we can run [parametric locator](https://www.clicknium.com/documents/automation/parametric_locator) to specify the parameter value, so one locator can be used to locate several elements.
+To get text of `state`, `ship_date` and `total`, we can run [parametric locator](https://www.clicknium.com/documents/concepts/parametric_locator) to specify the parameter value, so one locator can be used to locate several elements.
 
 ![parametric locator](img/parametric_locator.png)
 
 
 # Locator
-The [Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of UI element,which can be recorded and edited with [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium).
+The [Locator](https://www.clicknium.com/documents/concepts/locator) is the identifier of UI element,which can be recorded and edited with [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium).
 
 # More samples
 You can refer to more automation samples and solutions in [clicknium github samples](https://github.com/clicknium/clicknium-samples).

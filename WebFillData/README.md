@@ -1,4 +1,4 @@
-# How to read data from excel and fill data on the web page
+# Read data from excel and fill in web form
 
 ## Setup
 
@@ -20,7 +20,7 @@ pip install clicknium
 pip install pandas
 ```
 
-3. Install Clicknium Edge extension, refer to [Edge Extension](https://www.clicknium.com/documents/developtools/vscode/extensions/edgeextension) for more information
+3. Install Clicknium Edge extension, refer to [Edge Extension](https://www.clicknium.com/documents/documents/tutorial/extensions/edgeextension) for more information
 
 ```
 from clicknium import clicknium as cc
