@@ -9,7 +9,7 @@ Here we demonstrate one customer onboarding automation solution.
 - iterate the records in CVS file to register customer information into CRM.
 
 # Run this sample
-- follow [Clicknium getting started](https://www.clicknium.com/documents) to set up develop environment.
+- follow [Clicknium getting started](https://www.clicknium.com/documents/quickstart) to set up develop environment.
 - clone [sample repo](https://github.com/clicknium/clicknium-samples).
 ```
 git clone https://github.com/clicknium/clicknium-samples.git

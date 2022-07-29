@@ -16,7 +16,7 @@ The manual steps are as follows:
 - After all transactions are reviewed, click `Submit` button in local financial system.
 
 # Run this sample
-- follow [clicknium getting started](https://www.clicknium.com/documents) to set up develop environment.
+- follow [clicknium getting started](https://www.clicknium.com/documents/quickstart) to set up develop environment.
 - clone [sample repo](https://github.com/clicknium/clicknium-samples).
 ```
 git clone https://github.com/clicknium/clicknium-samples.git
