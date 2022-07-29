@@ -10,7 +10,7 @@ The Select HTML tag represents a control that provides a menu of options.
 
 ### Ant Design
 The UI repository based on React. For more information, please refer to [here](https://ant.design/components/select/).  
-- Notes: The Web Recorder in Clicknium requires a browser plugin in addition to IE browser. More about the installation, please refer to [Clicknium browser plugin](https://www.clickniumdev.com/documents/tutorial/extensions/) 
+- Notes: The Web Recorder in Clicknium requires a browser plugin in addition to IE browser. More about the installation, please refer to [Clicknium browser plugin](https://www.clicknium.com/documents/tutorial/extensions/) 
 
 
 ## How To Automate Calendar In Clicknium For Automation Testing?
@@ -18,7 +18,7 @@ The UI repository based on React. For more information, please refer to [here](h
 ### HTML Select tag
 1. With the Clicknium recorder, the component elements operated in recording the page.   
    Clicknium provides an excellent recording.  
-   For more information, please refer to [Clicknium Recorder](https://www.clickniumdev.com/documents/tutorial/recorder/).
+   For more information, please refer to [Clicknium Recorder](https://www.clicknium.com/documents/tutorial/recorder/).
  
    Here is the content recorded as below.
 ![record](./img/html-record.png)  
