@@ -9,7 +9,7 @@ The manual steps are as the follows:
 - fill the data of employee to the new HR system(web portal).
 
 # Run this sample
-- follow [clicknium getting started](https://www.clicknium.com/documents) to set up develop environment.
+- follow [clicknium getting started](https://www.clicknium.com/documents/quickstart) to set up develop environment.
 - clone this sample repo
 - download and unzip [legacy thick client app](https://github.com/AutomationAnywhere/Employee-Data-Migration/raw/master/EmployeeList.zip) to local repo folder.
 - clone [sample repo](https://github.com/clicknium/clicknium-samples).
