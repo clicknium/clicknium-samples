@@ -92,7 +92,7 @@ In code above, you can see:
 - As Clicknium provides unified API for both desktop and web automation, you can write automation code  in the same way for browser and windows application.
 
 # Locator
-The [Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of UI element, which can be recorded or edited with [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium).
+The [Locator](https://www.clicknium.com/documents/concepts/locator) is the identifier of UI element, which can be recorded or edited with [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium).
 
 In this sample, you can open the locator in Visual Studio Code, for example:
 ![locator](img/locator.png)

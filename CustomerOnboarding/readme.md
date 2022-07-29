@@ -76,7 +76,7 @@ In the code above, you can see:
 - Easy to check radio button/checkbox: `tab.find_element(<locator>).set_checkbox()`
 
 # Locator
-The [Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of a UI element, which can be recorded and edited in [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium). 
+The [Locator](https://www.clicknium.com/documents/concepts/locator) is the identifier of a UI element, which can be recorded and edited in [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium). 
 
 In this sample, you can open the locator in Visual Studio Code, for example:
 ![locator](img/locator.png)	
