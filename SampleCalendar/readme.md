@@ -10,27 +10,26 @@ The UI repository based on jQuery. For more information, please refer to [here](
 
 ### Ant Design
 The UI repository based on React. For more information, please refer to [here](https://ant.design/components/date-picker/).  
--Notes: The Web Recorder in Clicknium requires a browser plugin in addition to IE browser. More about the installation, please refer to [Clicknium browser plugin](https://www.clicknium.com/documents/developtools/vscode/extensions/) 
+- Notes: The Web Recorder in Clicknium requires a browser plugin in addition to IE browser. More about the installation, please refer to [Clicknium browser plugin](https://www.clicknium.com/documents/tutorial/extensions/) 
 
 
 ## How To Automate Calendar In Clicknium For Automation Testing?
 
 ### JqueryUI Calendar
 1. With the Clicknium recorder, the component elements operated in recording the page.   
-   Clicknuim provides an excellent recording.  
-   For more information, please refer to [Clicknium Recorder](https://www.clicknium.com/documents/developtools/vscode/extensions/).
+   Clicknium provides an excellent recording.  
+   For more information, please refer to [Clicknium Recorder](https://www.clicknium.com/documents/tutorial/recorder/).
  
    Here is the content recorded as below.
 ![record](./img/jquery-record.png)  
    Three parts of "TO" are recorded the same way as "FROM".
 
-1. Change the locator of the date. As automatic recording is generated according to rows and columns of the table where the date is located, the rows and columns of the dates in each month are different and cannot be accurately located.  Here we change the date element to be located by sinfo and index. 
+2. Change the locator of the date. As automatic recording is generated according to rows and columns of the table where the date is located, the rows and columns of the dates in each month are different and cannot be accurately located.  Here we change the date element to be located by sinfo and index. 
    Before:
    ![before](./img/jquery-update-before.png) 
    After：
    ![record](./img/jquery-update-after.png) 
-2. 准备工作做好后，我们可以上代码了。
-When the loctor is changed, we write the code as below.
+3. When the locator is changed, we write the code as below.
    ```python
    from clicknium import clicknium, ui, locator
 
