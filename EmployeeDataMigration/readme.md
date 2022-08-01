@@ -9,7 +9,7 @@ The manual steps are as the follows:
 - fill the data of employee to the new HR system(web portal).
 
 # Run this sample
-- follow [clicknium getting started](https://www.clicknium.com/documents) to set up develop environment.
+- follow [clicknium getting started](https://www.clicknium.com/documents/quickstart) to set up develop environment.
 - clone this sample repo
 - download and unzip [legacy thick client app](https://github.com/AutomationAnywhere/Employee-Data-Migration/raw/master/EmployeeList.zip) to local repo folder.
 - clone [sample repo](https://github.com/clicknium/clicknium-samples).
@@ -92,7 +92,7 @@ In code above, you can see:
 - As Clicknium provides unified API for both desktop and web automation, you can write automation code  in the same way for browser and windows application.
 
 # Locator
-The [Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of UI element, which can be recorded or edited with [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium).
+The [Locator](https://www.clicknium.com/documents/concepts/locator) is the identifier of UI element, which can be recorded or edited with [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium).
 
 In this sample, you can open the locator in Visual Studio Code, for example:
 ![locator](img/locator.png)

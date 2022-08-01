@@ -1,7 +1,7 @@
 # [Clicknium-calendar]How to Set Values for Calendar by Automation
 ##  Introduction
 It is a common requirement to set date values at website. But there are a lot of component libraries with different frameworks. So let's take a look at how Clicknium implements date-related operations in a variety of web UI frameworks.  
-- Notes: More about the installation and the tutorial of Clicknium Automation, please refer to [here](https://www.clicknium.com/documents).
+-Notes: More about the installation and the tutorial of Clicknium Automation, please refer to [here](https://www.clicknium.com/documents/quickstart).
 
 ## The Types of Calendar UI Control
 
