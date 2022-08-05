@@ -16,7 +16,7 @@ The manual steps are as follows:
 - After all transactions are reviewed, click `Submit` button in local financial system.
 
 # Run this sample
-- follow [clicknium getting started](https://www.clicknium.com/documents) to set up develop environment.
+- follow [clicknium getting started](https://www.clicknium.com/documents/quickstart) to set up develop environment.
 - clone [sample repo](https://github.com/clicknium/clicknium-samples).
 ```
 git clone https://github.com/clicknium/clicknium-samples.git
@@ -52,15 +52,19 @@ Here we leverage Clicknium `find_elements` api to find all similar elements. For
 ![locator1](img/locator1.png)
 
 To record similar elements, you can click `Similar elements` in Clicknium Recorder:
+
 ![recorder1](img/recorder1.png)
 
 The wizard will be shown as below:
+
 ![recorder2](img/recorder2.png)
 
 You can record (`Ctrl`+click) two or more elements, for example:
+
 ![recorder3](img/recorder3.png)
 
 It will show the counts of matched elements:
+
 ![recorder4](img/recorder4.png)
 
 - open bank system and login
@@ -95,7 +99,7 @@ def update_transaction_status(tab: BrowserTab, transaction):
 ```
 
 # Locator
-The [Locator](https://www.clicknium.com/documents/automation/locator) is the identifier of UI element, which can be recorded and edited with [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium).
+The [Locator](https://www.clicknium.com/documents/concepts/locator) is the identifier of UI element, which can be recorded and edited with [clicknium vs code extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium).
 
 # Compare with Playwright
 - You need to write xpath to get similar elements.
