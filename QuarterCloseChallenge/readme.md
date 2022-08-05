@@ -52,15 +52,19 @@ Here we leverage Clicknium `find_elements` api to find all similar elements. For
 ![locator1](img/locator1.png)
 
 To record similar elements, you can click `Similar elements` in Clicknium Recorder:
+
 ![recorder1](img/recorder1.png)
 
 The wizard will be shown as below:
+
 ![recorder2](img/recorder2.png)
 
 You can record (`Ctrl`+click) two or more elements, for example:
+
 ![recorder3](img/recorder3.png)
 
 It will show the counts of matched elements:
+
 ![recorder4](img/recorder4.png)
 
 - open bank system and login
