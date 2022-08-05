@@ -1,7 +1,7 @@
 # Clicknium Automation Sample Solution - Data Migration
 
 Many enterprises need data migration solution. For example, if IT system is upgraded,there is need to migrate data from legacy system to upgraded system.
-This is a sample for employee data migration solution with[Clicknium](https://www.clicknium.com/) desktop&web automation.
+This is a sample for employee data migration solution with [Clicknium](https://www.clicknium.com/) desktop&web automation.
 Here is the details: migrate employee data from a legacy thick client application into new HR system.
 The manual steps are as the follows:
 - query data from legacy client app based on employee id.
