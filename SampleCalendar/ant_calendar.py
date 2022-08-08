@@ -9,10 +9,10 @@ day = '1'
 months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 # Open the page
-clicknium.chrome.open("https://ant.design/components/date-picker/")
+tab = clicknium.chrome.open("https://ant.design/components/date-picker/")
 
 # Click the date input
-ui(locator.chrome.ant.text).mouse_down()
+tab.find_element(locator.chrome.ant.text).mouse_down()
 
 # Compare the year. If not same, adjust to the next year or last year by clicking the button until they are same.
 locator_year = ui(locator.chrome.ant.button_year)
