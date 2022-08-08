@@ -30,8 +30,8 @@ The UI repository based on React. For more information, please refer to [here](h
    ```python
    from clicknium import clicknium, ui, locator
 
-   clicknium.chrome.open("https://www.w3docs.com/learn-html/html-select-tag.html")
-   ui(locator.chrome.w3docs.select).select_item("Git")
+   tab = clicknium.chrome.open("https://www.w3docs.com/learn-html/html-select-tag.html")
+   tab.find_element(locator.chrome.w3docs.select).select_item("Git")
    ```
 
 ### Ant Design
@@ -47,8 +47,8 @@ The UI repository based on React. For more information, please refer to [here](h
    ```python
    from clicknium import clicknium, ui, locator
 
-   clicknium.chrome.open("https://ant.design/components/select/")
+   tab = clicknium.chrome.open("https://ant.design/components/select/")
 
-   ui(locator.chrome.ant.select).click()
-   ui(locator.chrome.ant.option_jack).click()
+   tab.find_element(locator.chrome.ant.select).click()
+   tab.find_element(locator.chrome.ant.option_jack).click()
    ```

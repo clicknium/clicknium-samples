@@ -33,15 +33,15 @@ The UI repository based on React. For more information, please refer to [here](h
    ```python
    from clicknium import clicknium, ui, locator
 
-   clicknium.chrome.open("https://jqueryui.com/datepicker/#date-range")
+   tab = clicknium.chrome.open("https://jqueryui.com/datepicker/#date-range")
 
-   ui(locator.chrome.jqueryui.text_from).set_focus()
-   ui(locator.chrome.jqueryui.select_from).select_item("Jan")
-   ui(locator.chrome.jqueryui.a_1_from).click()
+   tab.find_element(locator.chrome.jqueryui.text_from).set_focus()
+   tab.find_element(locator.chrome.jqueryui.select_from).select_item("Jan")
+   tab.find_element(locator.chrome.jqueryui.a_1_from).click()
 
-   ui(locator.chrome.jqueryui.text_to).set_focus()
-   ui(locator.chrome.jqueryui.select_to).select_item("Dec")
-   ui(locator.chrome.jqueryui.a_31_to).click()
+   tab.find_element(locator.chrome.jqueryui.text_to).set_focus()
+   tab.find_element(locator.chrome.jqueryui.select_to).select_item("Dec")
+   tab.find_element(locator.chrome.jqueryui.a_31_to).click()
    ```
 
 ### Ant Design
@@ -74,10 +74,10 @@ The UI repository based on React. For more information, please refer to [here](h
    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
    # Open the page
-   clicknium.chrome.open("https://ant.design/components/date-picker/")
+   tab = clicknium.chrome.open("https://ant.design/components/date-picker/")
 
    # Click the date input
-   ui(locator.chrome.ant.text).mouse_down()
+   tab.find_element(locator.chrome.ant.text).mouse_down()
 
    # Compare the year. If not same, adjust to the next year or last year by clicking the button until they are same.
    locator_year = ui(locator.chrome.ant.button_year)
