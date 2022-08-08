@@ -20,7 +20,7 @@ Learn how to scrape images from any website using Clicknium.
     websiteUrl = "https://www.clicknium.com"
     tab = clicknium.chrome.open(websiteUrl)
 
-    imgs = clicknium.find_elements(locator.chrome.clicknium.img)
+    imgs = tab.find_elements(locator.chrome.clicknium.img)
 
     sources = []
     for img in imgs:
