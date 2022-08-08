@@ -1,9 +1,9 @@
 # Clicknium Automation Sample Solution - Cyber Loss Prevention
 
-According to Nilson, the card industry faces $400B in fraud losses over next decade, Credit card fraud accounted for [$28.58 Billion](https://www.paymentsdive.com/news/card-industry-faces-400b-in-fraud-losses-over-next-decade-nilson-says/611521/#:~:text=Global%20card%20fraud%20losses%20of,2019%2C%20per%20the%20Nilson%20report.) in losses for global financial institutions in 2020 alone. To combat rampant fraud, the cyber loss prevention team at Eagle One Financial is taking a non-traditional approach to combat losses: scraping credit card dumps from dark web pages in an effort to try to identify compromised accounts.
+According to Nilson, the card industry faces $400B in fraud losses over next decade, credit card fraud accounted for [$28.58 Billion](https://www.paymentsdive.com/news/card-industry-faces-400b-in-fraud-losses-over-next-decade-nilson-says/611521/#:~:text=Global%20card%20fraud%20losses%20of,2019%2C%20per%20the%20Nilson%20report.) in losses for global financial institutions in 2020 alone. To combat rampant fraud, the cyber loss prevention team at Eagle One Financial is taking a non-traditional approach to combat losses: scraping credit card dumps from dark web pages in an effort to try to identify compromised accounts.
 
 This is an example of cyber loss prevention automation solution with [clicknium](https://www.clicknium.com/).
-It may scrape information from stolen credit cards, compare it to financial customer databases, and then upload a list of accounts for which transactions need to be stopped. Visit [this link](https://developer.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html) for more information.
+It may scrape information from stolen credit cards, compare it to financial customer databases, and then upload a list of accounts whose transactions need to be stopped. Visit [this link](https://developer.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html) for more information.
 
 # Run this sample
 - Refer to [Clicknium getting started](https://www.clicknium.com/documents/quickstart) to set up a development environment.
@@ -21,7 +21,7 @@ You will see the result as below:
 # What the solution do
 - Open 'cyberlossprevention' web page
 - Click "Ryan's Club login", a new Chrome tab with the login page will open.
-- Input the email and password and click 'Login' button
+- Input the email address and password and click 'Login' button
 ```python
     tab = cc.chrome.open('https://developer.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html')
     tab.find_element(locator.chrome.developer.a_ryansclublogin).click()
@@ -44,8 +44,8 @@ if expanded == 'false':
 '''
 club_tab.find_element(locator.chrome.developer.a_dump349473).click()
 ```
-- Wait for the table appear, then scrape credit card data.
-To identify all similar elements in this case, we can use the Clicknium 'find elements' api. For instance, locator of Card Number is as the following:
+- Wait for the table to appear, and then scrape the credit card data.
+To identify all similar elements in this case, we can use the Clicknium 'find elements' api. For instance, locator of Card Number is as follows:
 
 ![locator1](img/locator1.png)
 
@@ -53,7 +53,7 @@ To record similar elements, you can click `Similar elements` in Clicknium Record
 
 ![recorder1](img/recorder1.png)
 
-The wizard will appear as the following:
+The wizard will appear as follows:
 
 ![recorder2](img/recorder2.png)
 
@@ -61,11 +61,11 @@ You can record (`Ctrl`+click) two or more elements, for example:
 
 ![recorder3](img/recorder3.png)
 
-It will show the count of matched elements:
+It will display the count of matched elements:
 
 ![recorder4](img/recorder4.png)
 
-In addition to the "Card Number" column, we also need to scrape the "Expiration," "Level," "Brand," "Card Type," and "Last Name" columns, so we change the locator to [parametric locator](https://www.clicknium.com/documents/concepts/parametric_locator).
+In addition to the "Card Number" column, we also need to scrape the "Expiration," "Level," "Brand," "Card Type," and "Last Name" columns, so we can change the locator to [parametric locator](https://www.clicknium.com/documents/concepts/parametric_locator) without repeating the steps above..
 
 ![locator2](img/locator2.png)
 
