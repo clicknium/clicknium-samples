@@ -1,0 +1,1358 @@
+﻿{
+  "nodes": [
+    {
+      "nodes": [],
+      "locators": [
+        {
+          "content": {
+            "automationType": "Chrome",
+            "processName": {
+              "value": "chrome"
+            },
+            "filePath": {
+              "value": "chrome.exe"
+            },
+            "version": {
+              "value": "1.3"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "role": {
+                    "value": "window"
+                  },
+                  "title": {
+                    "value": "Automation Anywhere Labs - Cyber Loss Prevention"
+                  },
+                  "url": {
+                    "value": "https://developer.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html",
+                    "excluded": true
+                  },
+                  "className": {
+                    "value": "Chrome_WidgetWin_1"
+                  },
+                  "controlMetaType": "Tab"
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "A"
+                      },
+                      "class": {
+                        "value": "btn btn-primary",
+                        "excluded": true
+                      },
+                      "ancestorClass": {
+                        "value": "col-sm-4",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>div>div>div>a",
+                        "excluded": true
+                      },
+                      "sInfo": {
+                        "value": "Ryan's Club Login"
+                      },
+                      "tableRow": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "href": {
+                        "value": "automationanywherelabs-ryansclublogin.html",
+                        "excluded": true
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "filePath": "ee44bf0c-a385-407c-a283-09cb66ec6aa6.jpg",
+          "id": "e2b720a5-e215-49ad-b5bc-5a9bbb4df513",
+          "name": "a_ryansclublogin"
+        },
+        {
+          "content": {
+            "automationType": "Chrome",
+            "processName": {
+              "value": "chrome"
+            },
+            "filePath": {
+              "value": "chrome.exe"
+            },
+            "version": {
+              "value": "1.3"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "role": {
+                    "value": "window"
+                  },
+                  "title": {
+                    "value": "Ryan's Club - Login"
+                  },
+                  "url": {
+                    "value": "https://developer.automationanywhere.com/challenges/automationanywherelabs-ryansclublogin.html",
+                    "excluded": true
+                  },
+                  "className": {
+                    "value": "Chrome_WidgetWin_1"
+                  },
+                  "controlMetaType": "Tab"
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "INPUT"
+                      },
+                      "id": {
+                        "value": "email"
+                      },
+                      "class": {
+                        "value": "form-control",
+                        "excluded": true
+                      },
+                      "type": {
+                        "value": "email",
+                        "excluded": true
+                      },
+                      "ancestorClass": {
+                        "value": "form-group",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>main>div>div>div>div>div>form>div>input",
+                        "excluded": true
+                      },
+                      "sInfo": {
+                        "value": "Email",
+                        "excluded": true
+                      },
+                      "tableRow": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "controlMetaType": "Web",
+                      "name": {
+                        "value": "email",
+                        "excluded": true
+                      },
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "filePath": "88d52b8e-3be7-4e95-8900-c2e0da7e2386.jpg",
+          "id": "5c2b9b94-f768-4dbe-9fb7-99e5b02638a0",
+          "name": "email_email"
+        },
+        {
+          "content": {
+            "automationType": "Chrome",
+            "processName": {
+              "value": "chrome"
+            },
+            "filePath": {
+              "value": "chrome.exe"
+            },
+            "version": {
+              "value": "1.3"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "role": {
+                    "value": "window"
+                  },
+                  "title": {
+                    "value": "Ryan's Club - Login"
+                  },
+                  "url": {
+                    "value": "https://developer.automationanywhere.com/challenges/automationanywherelabs-ryansclublogin.html",
+                    "excluded": true
+                  },
+                  "className": {
+                    "value": "Chrome_WidgetWin_1"
+                  },
+                  "controlMetaType": "Tab"
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "INPUT"
+                      },
+                      "id": {
+                        "value": "password"
+                      },
+                      "class": {
+                        "value": "form-control",
+                        "excluded": true
+                      },
+                      "type": {
+                        "value": "password",
+                        "excluded": true
+                      },
+                      "ancestorClass": {
+                        "value": "form-group mb-4",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>main>div>div>div>div>div>form>div>input",
+                        "excluded": true
+                      },
+                      "sInfo": {
+                        "value": "Password",
+                        "excluded": true
+                      },
+                      "tableRow": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "controlMetaType": "Web",
+                      "name": {
+                        "value": "password",
+                        "excluded": true
+                      },
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "filePath": "ec543a8d-f949-4021-b34f-99f65d0834a0.jpg",
+          "id": "e8cc46f6-7d3f-43c1-9c1f-94165c142c64",
+          "name": "password_password"
+        },
+        {
+          "content": {
+            "automationType": "Chrome",
+            "processName": {
+              "value": "chrome"
+            },
+            "filePath": {
+              "value": "chrome.exe"
+            },
+            "version": {
+              "value": "1.3"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "role": {
+                    "value": "window"
+                  },
+                  "title": {
+                    "value": "Ryan's Club - Login"
+                  },
+                  "url": {
+                    "value": "https://developer.automationanywhere.com/challenges/automationanywherelabs-ryansclublogin.html",
+                    "excluded": true
+                  },
+                  "className": {
+                    "value": "Chrome_WidgetWin_1"
+                  },
+                  "controlMetaType": "Tab"
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "INPUT"
+                      },
+                      "id": {
+                        "value": "login"
+                      },
+                      "class": {
+                        "value": "btn btn-block login-btn mb-4",
+                        "excluded": true
+                      },
+                      "type": {
+                        "value": "button",
+                        "excluded": true
+                      },
+                      "ancestorClass": {
+                        "value": "card-body",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>main>div>div>div>div>div>form>input",
+                        "excluded": true
+                      },
+                      "sInfo": {
+                        "value": "Login",
+                        "excluded": true
+                      },
+                      "tableRow": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "controlMetaType": "Web",
+                      "name": {
+                        "value": "login",
+                        "excluded": true
+                      },
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "filePath": "1f15c839-0cf0-45f5-a53a-dcac3de5f937.jpg",
+          "id": "baf4cada-ecb7-4f78-a453-f26b059fba1c",
+          "name": "button_login"
+        },
+        {
+          "content": {
+            "automationType": "Chrome",
+            "processName": {
+              "value": "chrome"
+            },
+            "filePath": {
+              "value": "chrome.exe"
+            },
+            "version": {
+              "value": "1.3"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "role": {
+                    "value": "window"
+                  },
+                  "title": {
+                    "value": "Ryan's Club - Credit Card Dumps"
+                  },
+                  "url": {
+                    "value": "https://developer.automationanywhere.com/challenges/automationanywherelabs-ryansclub_home.html",
+                    "excluded": true
+                  },
+                  "className": {
+                    "value": "Chrome_WidgetWin_1"
+                  },
+                  "controlMetaType": "Tab"
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "A"
+                      },
+                      "class": {
+                        "value": "nav-link collapsed",
+                        "excluded": true
+                      },
+                      "ancestorId": {
+                        "value": "sidenavAccordion"
+                      },
+                      "ancestorClass": {
+                        "value": "nav",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "0",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>nav>div>div>a",
+                        "excluded": true
+                      },
+                      "sInfo": {
+                        "value": "Credit Card Dumps"
+                      },
+                      "tableRow": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "href": {
+                        "value": "#",
+                        "excluded": true
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "filePath": "69e0a980-3928-4d93-b623-29283d091bd6.jpg",
+          "id": "b209516c-e460-439a-9b28-fdea694077f0",
+          "name": "a_creditcarddumps"
+        },
+        {
+          "content": {
+            "automationType": "Chrome",
+            "processName": {
+              "value": "chrome"
+            },
+            "filePath": {
+              "value": "chrome.exe"
+            },
+            "version": {
+              "value": "1.3"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "role": {
+                    "value": "window"
+                  },
+                  "title": {
+                    "value": "Ryan's Club - Credit Card Dumps"
+                  },
+                  "url": {
+                    "value": "https://developer.automationanywhere.com/challenges/automationanywherelabs-ryansclub_home.html",
+                    "excluded": true
+                  },
+                  "className": {
+                    "value": "Chrome_WidgetWin_1"
+                  },
+                  "controlMetaType": "Tab"
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "A"
+                      },
+                      "class": {
+                        "value": "nav-link",
+                        "excluded": true
+                      },
+                      "ancestorId": {
+                        "value": "collapsePagescc"
+                      },
+                      "ancestorClass": {
+                        "value": "sb-sidenav-menu-nested nav",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>nav>div>div>div>nav>a",
+                        "excluded": true
+                      },
+                      "sInfo": {
+                        "value": "Dump                                     349473"
+                      },
+                      "tableRow": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "href": {
+                        "value": "automationanywherelabs-ryansclub_ccdumps_349473.html",
+                        "excluded": true
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "filePath": "3cab0ad3-3a6e-4df4-b55a-48a81edd2a93.jpg",
+          "id": "100e614d-ce58-4bab-afd4-78c9bc86abea",
+          "name": "a_dump349473"
+        },
+        {
+          "content": {
+            "automationType": "Chrome",
+            "processName": {
+              "value": "chrome"
+            },
+            "filePath": {
+              "value": "chrome.exe"
+            },
+            "version": {
+              "value": "1.3"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "role": {
+                    "value": "window"
+                  },
+                  "title": {
+                    "value": "Ryan's Club - Credit Card Dumps"
+                  },
+                  "url": {
+                    "value": "https://developer.automationanywhere.com/challenges/automationanywherelabs-ryansclub_ccdumps_349473.html",
+                    "excluded": true
+                  },
+                  "className": {
+                    "value": "Chrome_WidgetWin_1"
+                  },
+                  "controlMetaType": "Tab"
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "TABLE"
+                      },
+                      "id": {
+                        "value": "datatablesSimple"
+                      },
+                      "class": {
+                        "value": "dataTable-table"
+                      },
+                      "ancestorId": {
+                        "value": "layoutSidenav_content"
+                      },
+                      "ancestorClass": {
+                        "value": "dataTable-container"
+                      },
+                      "isLeaf": {
+                        "value": "0",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>main>div>div>div>div>div>div>table"
+                      },
+                      "tableRow": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    },
+                    "childControls": [
+                      {
+                        "identifier": {
+                          "tag": {
+                            "value": "TD"
+                          },
+                          "ancestorId": {
+                            "value": "transactions"
+                          },
+                          "ancestorClass": {
+                            "value": "dataTable-table"
+                          },
+                          "isLeaf": {
+                            "value": "1",
+                            "excluded": true
+                          },
+                          "cssSelector": {
+                            "value": "body>div>div>main>div>div>div>div>div>div>table>tbody>tr>td",
+                            "excluded": true
+                          },
+                          "sInfo": {
+                            "value": "541652**********",
+                            "excluded": true
+                          },
+                          "tableRow": {
+                            "value": "2",
+                            "excluded": true
+                          },
+                          "tableCol": {
+                            "value": "{{col}}"
+                          },
+                          "controlMetaType": "Web",
+                          "index": {
+                            "value": "1",
+                            "excluded": true
+                          }
+                        },
+                        "childControls": [],
+                        "excluded": false
+                      }
+                    ],
+                    "excluded": false
+                  }
+                ],
+                "excluded": false
+              }
+            ]
+          },
+          "filePath": "a6b9787e-0165-4f06-8924-ba766b7d1207.jpg",
+          "id": "ca4fb761-2358-468d-bd51-64427914ed4e",
+          "name": "td"
+        },
+        {
+          "content": {
+            "automationType": "Chrome",
+            "processName": {
+              "value": "chrome"
+            },
+            "filePath": {
+              "value": "chrome.exe"
+            },
+            "version": {
+              "value": "1.3"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "role": {
+                    "value": "window"
+                  },
+                  "title": {
+                    "value": "Automation Anywhere Labs - Cyber Loss Prevention"
+                  },
+                  "url": {
+                    "value": "https://developer.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html",
+                    "excluded": true
+                  },
+                  "className": {
+                    "value": "Chrome_WidgetWin_1"
+                  },
+                  "controlMetaType": "Tab"
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "A"
+                      },
+                      "class": {
+                        "value": "btn btn-primary",
+                        "excluded": true
+                      },
+                      "ancestorClass": {
+                        "value": "col-sm-4",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>div>div>div>a",
+                        "excluded": true
+                      },
+                      "sInfo": {
+                        "value": "Customer Database Download"
+                      },
+                      "tableRow": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "href": {
+                        "value": "https://github.com/AutomationAnywhere/EagleOneFinancial-CustomerDB/raw/main/CustomerData.db",
+                        "excluded": true
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "filePath": "d18f7ccd-5995-4fff-97a9-c39fc5d5686f.jpg",
+          "id": "b7f0f8e8-1943-4b38-8b08-bf24952e77b5",
+          "name": "a_customerdatabasedownload"
+        },
+        {
+          "content": {
+            "automationType": "Chrome",
+            "processName": {
+              "value": "chrome"
+            },
+            "filePath": {
+              "value": "chrome.exe"
+            },
+            "version": {
+              "value": "1.3"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "role": {
+                    "value": "window"
+                  },
+                  "title": {
+                    "value": "Automation Anywhere Labs - Cyber Loss Prevention"
+                  },
+                  "url": {
+                    "value": "https://developer.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html",
+                    "excluded": true
+                  },
+                  "className": {
+                    "value": "Chrome_WidgetWin_1"
+                  },
+                  "controlMetaType": "Tab"
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "A"
+                      },
+                      "class": {
+                        "value": "btn btn-primary",
+                        "excluded": true
+                      },
+                      "ancestorClass": {
+                        "value": "col-sm-4",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>div>div>div>a",
+                        "excluded": true
+                      },
+                      "sInfo": {
+                        "value": "Cancellations CSV Template"
+                      },
+                      "tableRow": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "href": {
+                        "value": "https://s3-us-west-2.amazonaws.com/aai-devportal-media/wp-content/uploads/2022/03/08163124/cancellations_template.csv",
+                        "excluded": true
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "filePath": "005d0d87-591f-4cda-b026-bd99faeee91d.jpg",
+          "id": "39d009f1-6c15-4710-9c59-5c25f6feb9d0",
+          "name": "a_cancellationscsvtemplate"
+        },
+        {
+          "content": {
+            "automationType": "Chrome",
+            "processName": {
+              "value": "chrome"
+            },
+            "filePath": {
+              "value": "chrome.exe"
+            },
+            "version": {
+              "value": "1.3"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "role": {
+                    "value": "window"
+                  },
+                  "title": {
+                    "value": "Ryan's Club - Credit Card Dumps"
+                  },
+                  "url": {
+                    "value": "https://developer.automationanywhere.com/challenges/automationanywherelabs-ryansclub_ccdumps_349473.html",
+                    "excluded": true
+                  },
+                  "className": {
+                    "value": "Chrome_WidgetWin_1"
+                  },
+                  "controlMetaType": "Tab"
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "A"
+                      },
+                      "ancestorId": {
+                        "value": "layoutSidenav_content"
+                      },
+                      "ancestorClass": {
+                        "value": "pager",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>main>div>div>div>div>div>div>nav>ul>li>a",
+                        "excluded": true
+                      },
+                      "sInfo": {
+                        "value": "›"
+                      },
+                      "tableRow": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "href": {
+                        "value": "#",
+                        "excluded": true
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "filePath": "819ff335-4657-4593-a6ba-8607c95cff1c.jpg",
+          "id": "c75f6293-042e-41d7-b2b1-be26b45eeec2",
+          "name": "a"
+        },
+        {
+          "content": {
+            "automationType": "Chrome",
+            "processName": {
+              "value": "chrome"
+            },
+            "filePath": {
+              "value": "chrome.exe"
+            },
+            "version": {
+              "value": "1.3"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "role": {
+                    "value": "window"
+                  },
+                  "title": {
+                    "value": "Automation Anywhere Labs - Cyber Loss Prevention"
+                  },
+                  "url": {
+                    "value": "https://developer.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html",
+                    "excluded": true
+                  },
+                  "className": {
+                    "value": "Chrome_WidgetWin_1"
+                  },
+                  "controlMetaType": "Tab"
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "INPUT"
+                      },
+                      "id": {
+                        "value": "fileToUpload",
+                        "excluded": true
+                      },
+                      "class": {
+                        "value": "form-control",
+                        "excluded": true
+                      },
+                      "type": {
+                        "value": "file",
+                        "excluded": true
+                      },
+                      "ancestorClass": {
+                        "value": "col-sm-10",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>div>input",
+                        "excluded": true
+                      },
+                      "tableRow": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "filePath": "707893b1-c29e-45f4-a08b-77736fb35fc2.jpg",
+          "id": "6ac5bb64-5b14-46a4-be11-240215502713",
+          "name": "file_filetoupload"
+        },
+        {
+          "content": {
+            "automationType": "Chrome",
+            "processName": {
+              "value": "chrome"
+            },
+            "filePath": {
+              "value": "chrome.exe"
+            },
+            "version": {
+              "value": "1.3"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "role": {
+                    "value": "window"
+                  },
+                  "title": {
+                    "value": "Automation Anywhere Labs - Cyber Loss Prevention"
+                  },
+                  "url": {
+                    "value": "https://developer.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html",
+                    "excluded": true
+                  },
+                  "className": {
+                    "value": "Chrome_WidgetWin_1"
+                  },
+                  "controlMetaType": "Tab"
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "BUTTON"
+                      },
+                      "id": {
+                        "value": "btnUploadFile"
+                      },
+                      "class": {
+                        "value": "btn btn-danger btn-lg",
+                        "excluded": true
+                      },
+                      "type": {
+                        "value": "button",
+                        "excluded": true
+                      },
+                      "ancestorClass": {
+                        "value": "col-sm-2",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>div>button",
+                        "excluded": true
+                      },
+                      "sInfo": {
+                        "value": "Upload File",
+                        "excluded": true
+                      },
+                      "tableRow": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "-1",
+                        "excluded": true
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "filePath": "e03af249-9913-4b8f-a01c-1fd9f7c0fb60.jpg",
+          "id": "c83583af-1d8d-4584-9310-2df0cb5eab17",
+          "name": "button_btnuploadfile"
+        }
+      ],
+      "id": "df499753-2107-4f34-8788-706108d6c67c",
+      "name": "developer"
+    }
+  ],
+  "locators": [
+    {
+      "content": {
+        "automationType": "Uia",
+        "processName": {
+          "value": "chrome"
+        },
+        "filePath": {
+          "value": "chrome.exe"
+        },
+        "version": {
+          "value": "1.3"
+        },
+        "childControls": [
+          {
+            "identifier": {
+              "automationId": {
+                "value": "",
+                "excluded": true
+              },
+              "isPassword": {
+                "value": "False",
+                "excluded": true
+              },
+              "orientation": {
+                "value": "None",
+                "excluded": true
+              },
+              "role": {
+                "value": "pane"
+              },
+              "isDirectChild": {
+                "value": "True"
+              },
+              "className": {
+                "value": "Chrome_WidgetWin_1"
+              },
+              "controlMetaType": "Uia",
+              "name": {
+                "value": "Automation Anywhere Labs - Cyber Loss Prevention - Google Chrome - rpa2022"
+              },
+              "index": {
+                "value": "1",
+                "excluded": true
+              }
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "automationId": {
+                    "value": "",
+                    "excluded": true
+                  },
+                  "isPassword": {
+                    "value": "False",
+                    "excluded": true
+                  },
+                  "orientation": {
+                    "value": "None",
+                    "excluded": true
+                  },
+                  "role": {
+                    "value": "window"
+                  },
+                  "isDirectChild": {
+                    "value": "True"
+                  },
+                  "className": {
+                    "value": "#32770"
+                  },
+                  "controlMetaType": "Uia",
+                  "name": {
+                    "value": "Open"
+                  },
+                  "index": {
+                    "value": "1",
+                    "excluded": true
+                  }
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "automationId": {
+                        "value": "1148"
+                      },
+                      "isPassword": {
+                        "value": "False",
+                        "excluded": true
+                      },
+                      "orientation": {
+                        "value": "None",
+                        "excluded": true
+                      },
+                      "role": {
+                        "value": "comboBox"
+                      },
+                      "accessKey": {
+                        "value": "Alt+n"
+                      },
+                      "isDirectChild": {
+                        "value": "True"
+                      },
+                      "className": {
+                        "value": "ComboBox"
+                      },
+                      "controlMetaType": "Uia",
+                      "name": {
+                        "value": "",
+                        "excluded": true
+                      },
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    },
+                    "childControls": [
+                      {
+                        "identifier": {
+                          "automationId": {
+                            "value": "1148"
+                          },
+                          "isPassword": {
+                            "value": "False",
+                            "excluded": true
+                          },
+                          "orientation": {
+                            "value": "None",
+                            "excluded": true
+                          },
+                          "role": {
+                            "value": "edit"
+                          },
+                          "accessKey": {
+                            "value": "Alt+n"
+                          },
+                          "isDirectChild": {
+                            "value": "True"
+                          },
+                          "className": {
+                            "value": "Edit"
+                          },
+                          "controlMetaType": "Uia",
+                          "name": {
+                            "value": "",
+                            "excluded": true
+                          },
+                          "index": {
+                            "value": "1",
+                            "excluded": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "filePath": "549dae4c-8437-4ae5-97cf-ae7104b0912d.jpg",
+      "id": "4f2e90d0-019c-48e6-9566-d8c34d35fe81",
+      "name": "edit_1148"
+    },
+    {
+      "content": {
+        "automationType": "Uia",
+        "processName": {
+          "value": "chrome"
+        },
+        "filePath": {
+          "value": "chrome.exe"
+        },
+        "version": {
+          "value": "1.3"
+        },
+        "childControls": [
+          {
+            "identifier": {
+              "automationId": {
+                "value": "",
+                "excluded": true
+              },
+              "isPassword": {
+                "value": "False",
+                "excluded": true
+              },
+              "orientation": {
+                "value": "None",
+                "excluded": true
+              },
+              "role": {
+                "value": "pane"
+              },
+              "isDirectChild": {
+                "value": "True"
+              },
+              "className": {
+                "value": "Chrome_WidgetWin_1"
+              },
+              "controlMetaType": "Uia",
+              "name": {
+                "value": "Automation Anywhere Labs - Cyber Loss Prevention - Google Chrome - rpa2022"
+              },
+              "index": {
+                "value": "1",
+                "excluded": true
+              }
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "automationId": {
+                    "value": "",
+                    "excluded": true
+                  },
+                  "isPassword": {
+                    "value": "False",
+                    "excluded": true
+                  },
+                  "orientation": {
+                    "value": "None",
+                    "excluded": true
+                  },
+                  "role": {
+                    "value": "window"
+                  },
+                  "isDirectChild": {
+                    "value": "True"
+                  },
+                  "className": {
+                    "value": "#32770"
+                  },
+                  "controlMetaType": "Uia",
+                  "name": {
+                    "value": "Open"
+                  },
+                  "index": {
+                    "value": "1",
+                    "excluded": true
+                  }
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "automationId": {
+                        "value": "1"
+                      },
+                      "isPassword": {
+                        "value": "False",
+                        "excluded": true
+                      },
+                      "orientation": {
+                        "value": "None",
+                        "excluded": true
+                      },
+                      "role": {},
+                      "accessKey": {
+                        "value": "Alt+o"
+                      },
+                      "isDirectChild": {
+                        "value": "True"
+                      },
+                      "className": {
+                        "value": "Button"
+                      },
+                      "controlMetaType": "Uia",
+                      "name": {
+                        "value": "",
+                        "excluded": true
+                      },
+                      "index": {
+                        "value": "1",
+                        "excluded": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "filePath": "6a15a749-011e-462b-9e53-bd5bbbeb501f.jpg",
+      "id": "516b1428-e23b-4fd7-8401-afc2b26878cf",
+      "name": "button_1"
+    }
+  ],
+  "id": "c8fc431b-9edd-408d-975d-9b1681894a5a",
+  "name": "chrome"
+}
