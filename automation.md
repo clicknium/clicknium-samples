@@ -80,7 +80,7 @@ More about Native Messaging, please visit [this link](https://developer.chrome.c
 #  SAP Automation
 As SAP provides the script automation by itself, most RPA products automate SAP applications based on its own automation technology.
 
-- Automated supplementary technology
+# Automated supplementary technology
 In addition to the above native automation technologies, the following automation technologies are generally used in achieving the hybrid automation.
   - Image recognition, shortcut keys
   - OCR
